@@ -1,1 +1,4 @@
+aiosqlite==0.20.0
 fastapi==0.111.0
+sqlalchemy==2.0.30
+python-dotenv==0.19.1
