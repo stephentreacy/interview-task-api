@@ -10,7 +10,7 @@ COPY . .
 
 ENV DATABASE_URL=sqlite+aiosqlite:///:memory:
 
-CMD ["pytest"]
+CMD ["pytest", "--cov=app"]
 
 # docker build -f Dockerfile.test -t weather-app-test .
 # docker run --rm weather-app-test
