@@ -84,7 +84,11 @@ Alternatively, without docker:
    pip install -r requirements.txt -r requirements-dev.txt
    ```   
 
-4. And then run the tests locally with:
+4. Set the DATABASE_URL env variable: 
+   ```sh
+   export DATABASE_URL=sqlite+aiosqlite:///:memory:
+   ```   
+5. And then run the tests locally with:
    ```sh
    pytest --cov=app
    ```   
